@@ -1,0 +1,238 @@
+<!-- exercise 1 : display an appropriate icon using image sprites, from the images shared on the day6, layout these div's using positions
+exercise 2 : same as above but layout these div's using flex
+exercise 3 : same as above but layout these div's using grid -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      #styleFile::before{
+        
+        content: "";
+        display: inline-block;
+        width: 66px;
+        height: 80px;
+        background-image: url('images/file-icons.png');
+        background-repeat: no-repeat;
+        background-position: -750px -20px;
+        border:5px solid black;
+        
+      
+      }
+      #resumeFile::before{
+       
+        content: "";
+        display: inline-block;
+        width: 66px;
+        height: 80px;
+        background-image: url('images/file-icons.png');
+        background-repeat: no-repeat;
+        background-position: -30px -20px;
+        border:5px solid black;
+      
+      }
+      #passportFile::before{
+       
+       content: "";
+       display: inline-block;
+       width: 66px;
+       height: 80px;
+       background-image: url('images/file-icons.png');
+       background-repeat: no-repeat;
+       background-position: -30px -20px;
+       border:5px solid black;
+     
+     }
+     #photoFile::before{
+       
+       content: "";
+       display: inline-block;
+       width: 66px;
+       height: 80px;
+       background-image: url('images/file-icons.png');
+       background-repeat: no-repeat;
+       background-position: -1110px -20px;
+       border:5px solid black;
+     
+     }
+     #bankFile::before{
+       
+       content: "";
+       display: inline-block;
+       width: 66px;
+       height: 80px;
+       background-image: url('images/file-icons.png');
+       background-repeat: no-repeat;
+       background-position: -30px -20px;
+       border:5px solid black;
+       
+     
+     }
+     #reqletterFile::before{
+       
+       content: "";
+       display: inline-block;
+       width: 66px;
+       height: 80px;
+       background-image: url('images/file-icons.png');
+       background-repeat: no-repeat;
+       background-position: -570px -200px;
+       border:5px solid black;
+       
+     
+     }
+     #reportsFile::before{
+       
+       content: "";
+       display: inline-block;
+       width: 66px;
+       height: 80px;
+       background-image: url('images/file-icons.png');
+       background-repeat: no-repeat;
+       background-position: -1110px -200px;
+       border:5px solid black;
+     
+     }
+     #backupFile::before{
+       
+       content: "";
+       display: inline-block;
+       width: 66px;
+       height: 80px;
+       background-image: url('images/file-icons.png');
+       background-repeat: no-repeat;
+       background-position: -1110px -200px;
+       border:5px solid black;
+     
+     }
+     #libraryFile::before{
+       
+       content: "";
+       display: inline-block;
+       width: 70px;
+       height: 90px;
+       background-image: url('images/file-icons.png');
+       background-repeat: no-repeat;
+       background-position: -1110px -200px;
+       border:5px solid black;
+     
+     }
+      article{
+        width: 50px;
+        /* position: relative; */
+        /* align-content: center; */
+        
+     }
+     
+     div{
+      position: relative;
+      margin: 20px;
+      background-color: white;
+      /* justify-content: center; */
+      border:2px solid black;
+      width: 250px;
+      /* margin-inline-start: 500px; */
+     } 
+     a{
+      position: absolute;
+      font-size: 20px;
+      margin-top: 30px;
+      color: brown;
+     }
+     main{
+     background-color: black;
+     display: grid;
+     grid-template-columns: 25% 25% 25%;
+     grid-template-rows: 25% 25% 25%;
+     margin: 150px;
+     justify-content: center;
+     /* align-items: center; */
+
+     }
+    .one{
+      grid-column: 1/2;
+    }
+    .two{
+      grid-column: 2/3;
+    }
+    .three{
+      grid-column: 3/4;
+    }
+    .four{
+      grid-column: 1/2;
+    }
+    .five{
+      grid-column: 2/3;
+    }
+    .six{
+      grid-column: 3/4;
+    }
+    .seven{
+      grid-column: 1/2;
+    }
+    .eight{
+      grid-column: 2/3;
+    }
+    .nine{
+      grid-column: 3/4;
+    }
+  
+     
+      
+    </style>
+  </head>
+  <body>
+    <main>
+    <article class="one">
+      <div title="css" class="icon" id="styleFile">
+        <a href="downloads/appstyle.css">Download Style File</a>
+      </div>
+    </article>
+    <article class="two">
+      <div title="pdf" class="icon" id="resumeFile">
+        <a href="downloads/mystyle.css">Download Resume</a>
+      </div>
+    </article>
+    <article class="three">
+      <div title="pdf" class="icon" id="passportFile">
+        <a href="downloads/mystyle.css">Download Passport</a>
+      </div>
+    </article>
+    <article class="four">
+      <div title="jpg" class="icon" id="photoFile">
+        <a href="downloads/mystyle.css">Download Photo</a>
+      </div>
+    </article>
+    <article class="five">
+      <div title="pdf" class="icon" id="bankFile">
+        <a href="downloads/mystyle.css">Download Bank Statement</a>
+      </div>
+    </article>
+    <article class="six">
+      <div title="word" class="icon" id="reqletterFile">
+        <a href="downloads/mystyle.css">Download Request Letter Format</a>
+      </div>
+    </article>
+    <article class="seven">
+      <div title="zip" class="icon" id="reportsFile">
+        <a href="downloads/mystyle.css">Download All Past Reports</a>
+      </div>
+    </article>
+    <article class="eight">
+      <div title="xml" class="icon" id="backupFile">
+        <a href="downloads/mystyle.css">Download Backup</a>
+      </div>
+    </article>
+    <article class="nine">
+      <div title="js" class="icon" id="libraryFile">
+        <a href="downloads/lib.js">Download Library</a>
+      </div>
+    </article>
+  </main>
+  </body>
+</html>
