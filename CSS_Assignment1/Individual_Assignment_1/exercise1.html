@@ -9,7 +9,7 @@ exercise 3 : same as above but layout these div's using grid -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Position</title>
     <style>
       #styleFile::before{
         
@@ -123,15 +123,17 @@ exercise 3 : same as above but layout these div's using grid -->
      
      }
       article{
-        /* position: relative; */
+        position: absolute;
         align-content: center;
+        margin: 30px;
+        /* position: absolute; */
         
      }
      
      div{
       position: relative;
       margin: 20px;
-      background-color: white;
+      background-color: pink;
       justify-content: center;
       border:2px solid black;
       width: 450px;
@@ -143,11 +145,41 @@ exercise 3 : same as above but layout these div's using grid -->
       margin-top: 30px;
       color: brown;
      }
-     main{
-     background-color: black;
+  main{
+      position: relative;
+      background-color: brown;
+      height: 1400px;
      }
-    
-     
+     article:nth-child(1){
+        top: 20px;
+
+     }
+     article:nth-child(2){
+        top:150px;
+    }
+    article:nth-child(3){
+         top:280px; 
+    }
+    article:nth-child(4){
+      top:410px;
+    }
+    article:nth-child(5){
+      top:540px;
+    }
+    article:nth-child(6){
+      top:670px;
+    }
+    article:nth-child(7){
+      top:800px;
+    }
+    article:nth-child(8){
+      top:930px;
+    }
+    article:nth-child(9){
+      top:1060px;
+    }
+   
+
       
     </style>
   </head>
